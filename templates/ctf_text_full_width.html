@@ -1,0 +1,182 @@
+<style type="text/css">
+
+
+    .one-column-container .information-block, .one-column-container .button-set {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .one-column-container .legal-lnk {
+        text-decoration: underline;
+    }
+    .one-column-container .legal-text {
+        padding: 20px;
+        font-size: 10px;
+        font-size: .625rem;
+        width: 100%;
+    }
+
+    .one-column-container .abstract-title {
+        font-size: 1rem;
+        line-height: 1rem;
+        font-family: Open Sans,Trebouchet,Helvetica,Arial,sans-serif;
+        letter-spacing: 0.3px;
+    }
+
+    /*----start---- code for devider between title and abstract blocks ----start----*/
+    .bottom-devider:after {
+        background: #575757;
+        content: "";
+        display: block;
+        height: .0625rem;
+        margin: .4rem auto 0;
+        width: 1.875rem;
+    }
+
+    .text-color-white.bottom-devider:after {
+        background: #fff;
+    }
+    .text-color-white.bottom-devider:after {
+        background: #000;
+    }
+    /*----end---- code for devider between title and abstract blocks ----end----*/
+
+
+    /*--------change color for title, subtitle to white --------  */
+    .text-color-white {
+        color: #fff;
+    }
+
+    /*--------change color for title, subtitle to black --------  */
+    .text-color-black {
+        color: #000;
+    }
+
+    /*--------hide element if it's empty --------  */
+    .hide-element {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    /*----start---- align text to side or center ----start----*/
+    .a-center {
+        text-align: center;
+    }
+
+    .a-left {
+        text-align: left;
+    }
+
+    .a-right {
+        text-align: right;
+    }
+    /*----end---- align text to side or center ----end----*/
+
+
+    .one-column-container .button-set {
+        margin-bottom: 30px;
+    }
+
+    .one-column-container {
+        position: relative;
+        background: #f7f7f7;
+        padding: 30px 0 15px;
+        margin: 30px 0 60px;
+    }
+
+    .one-column-container .title-xl {
+        padding-bottom: .625rem;
+        padding-top: .3125rem;
+        margin: 0 auto 20px;
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+
+    .one-column-container .button, .one-column-container .button:hover, .one-column-container .button:focus {
+        display: inline-block;
+        background: none;
+        border: 0;
+        margin: 0 15px;
+        font-size: 12px;
+        font-size: .75rem;
+    }
+
+
+    .one-column-container .title-xl {
+        width: 63%;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 40rem) {
+        .one-column-container .title-xl {
+            font-size: 30px;
+            font-size: 1.875rem;
+        }
+    }
+
+    @media screen and (min-width: 61.25rem) {
+        .one-column-container .text-container {
+            width: 70%;
+            padding: 3rem 1.5625rem 1rem;
+            margin: 0 auto;
+        }
+
+        .one-column-container .information-block {
+            margin-bottom: 50px;
+        }
+
+        .one-column-container .button, .one-column-container .button:hover, .one-column-container .button:focus {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            margin: 0 15px;
+        }
+
+        .one-column-container .button.left-button {
+            left: 10%;
+        }
+
+        .one-column-container .button.right-button {
+            right: 10%;
+        }
+
+        .one-column-container .legal-text {
+            font-size: 12px;
+            font-size: .75rem;
+            padding: 0;
+        }
+
+        .one-column-container .button-set {
+            margin-bottom: 0;
+        }
+
+    }
+
+</style>
+
+<div class="one-column one-column-container clearfix">
+    <div class="text-container a-center">
+        <div class="information-block">
+            <div class="abstract-title">Summer is here</div>
+            <h1 class="title-xl">
+                Summer Promotions hasta 70% disfruta de los mejores descuentos
+            </h1>
+        </div>
+        <div class="button-set">
+            <a href="javascript:void(0);" class="left-button button text-color-black" title="Mix and match made easy">
+                SHOP MAN
+            </a>
+            <a href="javascript:void(0);" class="right-button button text-color-black" title="Mix and match made easy">
+                SHOP WOMAN
+            </a>
+        </div>
+        <div class="legal-text a-center">
+            <span>Valid from 17/05/16 to 16/06/16 on selected items.</span>
+            <a href="javascript:void(0);" class="legal-lnk" title="Special Offer up to 50% off">
+                See Promotions.
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,231 @@
+<style type="text/css">
+	.table-container {
+		display: table;
+		width: 100%;
+	}
+	.table-container .table-layout {
+		display: block;
+		vertical-align: middle;
+	}
+	.poster-img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.column3-container {
+		max-width: 77.5rem;
+		position: relative;
+		margin: 15px auto 0 auto;
+	}
+	.item-container {
+		/*padding: 10px;*/
+	}
+	.content-wrapper {
+		position: relative;
+		overflow: hidden;
+		margin: 10px;
+	}
+	.text-container {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.text-container .title {
+		font-size: 40px;
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	.subheader {
+		display: inline-block;
+		font-size: 16px;
+		font-size: 1rem;
+		font-family: Cardo,Palatino,serif;
+		line-height: 1.0625rem;
+		margin-bottom: 1rem;
+	}
+	.btn-row {
+		min-width: 11.25rem;
+	}
+	.btn-row .button {
+		margin: .3125rem .9375rem;
+		background: #fbfafd;
+		color: #808081;
+		font-size: 12px;
+		font-size: .75rem;
+		display: inline-block;
+	}
+	.btn-row .button:hover,
+	.btn-row .button:focus {
+		background: #e7e5d5;
+		color: #808081;
+	}
+	.legal-text {
+		bottom: .9375rem;
+		width: 100%;
+		text-align: left;
+		font-size: 10px;
+		font-size: .625rem;
+		left: 0;
+		margin-top: -2.5rem;
+		padding: 0 .9375rem 0;
+		position: absolute;
+		z-index: 4;
+	}
+	.bottom-devider:after {
+		background: #575757;
+		content: "";
+		display: block;
+		height: .0625rem;
+		margin: .4rem auto 0;
+		width: 1.875rem;
+	}
+	.text-color-white.bottom-devider:after {
+		background: #fff;
+	}
+	.text-color-black.bottom-devider:after {
+		background: #000;
+	}
+	/*--------change color for title, subtitle to white --------  */
+	.text-color-white {
+		color: #fff;
+	}
+	/*--------change color for title, subtitle to black --------  */
+	.text-color-black {
+		color: #000;
+	}
+	/*--------hide element if it's empty --------  */
+	.hide-element {
+		display: none;
+		height: 0;
+		width: 0;
+	}
+@media screen and (min-width: 40rem) {
+	.table-container .table-layout {
+		display: table-cell;
+	}
+	.column3-item {
+		width: 33.3333333333%;
+	}
+	.legal-text {
+		padding: 0 .9375rem .5rem;
+	}
+}
+	@media screen and (min-width: 61.25rem) {
+		.legal-text {
+			bottom: 1.25rem;
+			padding: 0 1.5625rem 0;
+		}
+		.text-container .title {
+			font-size: 50px;
+			font-size: 3.125rem;
+			line-height: 3.125rem;
+			margin: 0 0 1.875rem;
+		}
+	}
+	.c94__image-overlay {
+		background: #fff;
+    	background: linear-gradient(180deg,transparent 0,#000);
+    	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1',endColorstr='$color2',GradientType=0);
+	    background: #000;
+	    height: 100%;
+	    left: 0;
+	    opacity: .2;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+}
+</style>
+
+<div class="column3-container table-container clearfix">
+	<div class="table-layout column3-item">
+		<div class="content-wrapper">
+			<!-- start / image container / start -->
+			<div class="item-container">
+				<img class="poster-img" alt="" src="images/homepage/20160610/20160610_CT_des_a.jpg?$staticlink$" title="" />
+				<div class="c94__image-overlay"></div>
+			</div>
+			
+			<div class="text-container">
+				<!-- subtitle container  -->
+				<span class="subheader text-color-white bottom-devider">Tailored fit</span>
+
+				<!-- title container  -->
+				<h2 class="title text-color-white">
+					Impeccable
+				</h2>
+
+				<!-- button container  -->
+				<div class="btn-row">
+					<a href="$httpUrl('Product-Show', 'pid', '31571729903')$" class="button">Shop now</a>
+				</div>
+			</div>
+			<!-- legal-text container -->
+			<!--<div class="legal-text text-color-white">
+				<span>This is legal text</span>
+			</div>-->
+		</div>
+	</div>
+
+	<div class="table-layout column3-item">
+		<div class="content-wrapper">
+			<!-- start / image container / start -->
+			<div class="item-container">
+				<img class="poster-img" alt="" src="images/homepage/20160610/20160610_CT_des_b.jpg?$staticlink$" title="" />
+				<div class="c94__image-overlay"></div>
+			</div>
+
+			<div class="text-container">
+				<!-- title container  -->
+				<!-- subtitle container  -->
+				<span class="subheader text-color-white bottom-devider">Classic style</span>
+
+				<h2 class="title text-color-white">
+					Colour
+				</h2>
+
+				<!-- button container  -->
+				<div class="btn-row">
+					<a href="$httpUrl('Product-Show', 'pid', '31571727204')$" class="button">Shop now</a>
+				</div>
+			</div>
+			<!-- legal-text container -->
+			<!--<div class="legal-text text-color-white">
+				<span>This is legal text</span>
+			</div>-->
+		</div>
+	</div>
+
+	<div class="table-layout column3-item">
+		<div class="content-wrapper">
+			<!-- start / image container / start -->
+			<div class="item-container">
+				<img class="poster-img" alt="" src="images/homepage/20160610/20160610_CT_des_c.jpg?$staticlink$" title="" />
+				<div class="c94__image-overlay"></div>
+			</div>
+
+			<div class="text-container">
+				<!-- title container  -->
+				<!-- subtitle container  -->
+				<span class="subheader text-color-white bottom-devider">Linen polo</span>
+
+				<h2 class="title text-color-white">
+					Light
+				</h2>
+
+				<!-- button container  -->
+				<div class="btn-row">
+					<a href="$httpUrl('Product-Show', 'pid', '31271921003')$" class="button">Shop now</a>
+				</div>
+			</div>
+			<!-- legal-text container -->
+			<!--<div class="legal-text text-color-white">
+				<span>This is legal text</span>
+			</div>-->
+		</div>
+	</div>
+
+</div>

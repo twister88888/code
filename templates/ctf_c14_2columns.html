@@ -1,0 +1,187 @@
+<style type="text/css">
+
+	.table-container {
+		display: table;
+		width: 100%;
+	}
+
+	.table-container .table-layout {
+		display: block;
+	}
+
+	/*----start---- code for devider between title and abstract blocks ----start----*/
+	.bottom-devider:after {
+		background: #575757;
+		content: "";
+		display: block;
+		height: .0625rem;
+		margin: .4rem auto 0;
+		width: 1.875rem;
+	}
+
+	.text-color-white.bottom-devider:after {
+		background: #fff;
+	}
+	.text-color-white.bottom-devider:after {
+		background: #000;
+	}
+	/*----end---- code for devider between title and abstract blocks ----end----*/
+
+
+	/*--------change color for title, subtitle to white --------  */
+	.text-color-white {
+		color: #fff;
+	}
+
+	/*--------change color for title, subtitle to black --------  */
+	.text-color-black {
+		color: #000;
+	}
+
+	/*--------hide element if it's empty --------  */
+	.hide-element {
+		display: none;
+		height: 0;
+		width: 0;
+	}
+
+	/*----start---- align text to side or center ----start----*/
+	.a-center {
+		text-align: center;
+	}
+
+	.a-left {
+		text-align: left;
+	}
+
+	.a-right {
+		text-align: right;
+	}
+	/*----end---- align text to side or center ----end----*/
+
+
+	.two-column-container .legal-lnk {
+		text-decoration: underline;
+	}
+	.two-column-container .legal-text {
+		padding: 20px;
+		font-size: 10px;
+		font-size: .625rem;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		margin-top: -3.125rem;
+		position: absolute;
+	}
+
+	.two-column-container {
+		position: relative;
+		background: #f7f7f7;
+		margin: 30px 0 60px;
+	}
+
+	.two-column-container .title-xl {
+		padding-bottom: .625rem;
+		padding-top: .3125rem;
+		margin: 0 auto;
+	}
+
+	.two-column-container .button, .two-column-container .button:hover, .two-column-container .button:focus {
+		display: inline-block;
+		background: none;
+		border: 0;
+		margin: 0 15px;
+		font-size: 12px;
+		font-size: .75rem;
+	}
+
+	.poster-container img {
+		width: 100%;
+		display: block;
+	}
+
+	.text-container .information-block {
+		padding: 10px;
+	}
+
+	.two-column-container .text-container {
+		margin: 30px 0 60px;
+	}
+
+	.two-column-container .abstract-title {
+		font-size: 1rem;
+		line-height: 1rem;
+		font-family: Open Sans,Trebouchet,Helvetica,Arial,sans-serif;
+		letter-spacing: 0.3px;
+	}
+
+@media screen and (min-width: 40rem) {
+	.two-column-container .title-xl {
+		font-size: 50px;
+		font-size: 3.125rem;
+	}
+}
+
+@media screen and (min-width: 61.25rem) {
+	.table-container .table-layout {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.poster-container {
+		width: 50%;
+	}
+
+	.two-column-container .text-container {
+		margin: 0;
+		position: relative;
+	}
+
+	.two-column-container .legal-text {
+		font-size: 12px;
+		font-size: .75rem;
+		padding: 0;
+		width: 80%;
+		bottom: 14px;
+		left: 0;
+		right: 0;
+		position: absolute;
+		margin: auto;
+	}
+
+	.two-column-container .title-xl {
+		margin: 0 auto 20px;
+	}
+}
+
+</style>
+
+<div class="two-column-container clearfix">
+	<div class="two-column-wrapper table-container">
+		<div class="poster-container table-layout a-center">
+			<img class="poster" alt="" src="images/homepage/Home/CTF-banner-poster.jpg?$staticlink$" title="" />
+		</div>
+		<div class="text-container table-layout a-center">
+			<div class="information-block">
+				<div class="abstract-title">Summer is here</div>
+				<h1 class="title-xl">
+					Punto para las <br>noches de verano
+				</h1>
+			</div>
+			<div class="button-set">
+				<a href="javascript:void(0);" class="left-button button text-color-black" title="Mix and match made easy">
+					SHOP MAN
+				</a>
+				<a href="javascript:void(0);" class="right-button button text-color-black" title="Mix and match made easy">
+					SHOP WOMAN
+				</a>
+			</div>
+			<div class="legal-text a-center">
+				<span>Valid from 17/05/16 to 16/06/16 on selected items.</span>
+				<a href="javascript:void(0);" class="legal-lnk" title="Special Offer up to 50% off">
+					See Promotions.
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
