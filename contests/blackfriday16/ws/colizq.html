@@ -26,6 +26,15 @@
   .contest__text form{
     padding-top: 0;
   }
+  .contest__form .label, .contest__form label {width: 14% !important;}
+  .contest__form .control-label {width: auto !important}
+  .contest__form .form-indent {margin-left: 14%;}
+  .contest__form button {margin-right: 13%;}
+
+  @media only screen and (max-width: 979px)  {
+    .contest__form .label, .contest__form label {margin-left:0;}
+    .contest__form .form-indent {margin-left: 0 !important;}
+  }
 
   @media only screen and (max-width: 640px)  {
     .contest h1{
@@ -37,6 +46,8 @@
     .contest__image div {margin-left:0;}
     .contest__form {padding:0;}
   }
+
+
 </style>
 
 <div>
