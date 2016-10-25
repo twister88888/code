@@ -1,17 +1,18 @@
 .musical {
+    font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
     overflow-x: hidden;}
 
+  .musical--margin{margin:3rem 0;}
+
 .musical__row1 {
   background: #f8f8f8 url(img/pataky_wearesexywomen_1_backgroundvideo_des.jpg) center 0 no-repeat;
-  background-size: contain;
-  padding-bottom: 5%;
-  /* vidéo player */}
+  background-size: contain;}
 
   .musical__row1--space {
-    padding: 10% 0 6%;
+    padding: 9rem 0 5rem;
     width: 60%;
     margin: auto;}
 
@@ -31,11 +32,11 @@
   display: inline-block;
   position: relative; }
 
-.musical__player:after {
-  /* 16:9 ratio */
-  padding-top: 56.25%;
-  display: block;
-  content: ''; }
+  .musical__player:after {
+    /* 16:9 ratio */
+    padding-top: 56.25%;
+    display: block;
+    content: ''; }
 
 .musical__container {
   position: absolute;
@@ -43,34 +44,70 @@
   bottom: 0;
   right: 0;
   left: 0; }
+
 /* Row2 */
 .musical__title{
-  font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
   font-weight: bold;
   text-align: center;
 }
+
+  .musical__title--interline{
+    font-size:1rem;
+  }
+
 .musical__text{
-  font-size:37px;
-  line-height: 40px;
+  font-size:2.2rem;
+  line-height: 3rem;
   text-transform: uppercase;
-}
-.musical__title--interline{
-  font-size:15px;
 }
 
 .musical__subtitle{
   font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
-  font-size:1.5rem;
+  font-size:1.3rem;
   font-weight: bold;
   text-align: center;
   margin-top:.5%;
 }
+
+/* Row3 */
+.musical__row3 {
+  text-align: center;}
+
+.musical__colIzq, .musical__colDer {
+  display: inline-block;
+  vertical-align: top;
+  width:42%;}
+
+.musical__colIzq img, .musical__colDer img{
+  max-width:100%;}
+
+.musical__shoppables{margin: .5rem 0 0;}
+
+.musical__shoppables li{
+  display: block;
+  margin: 0 0 .2rem;
+  padding: 0 .3125rem;}
+
+.musical__shoppable-link{
+  color: #000;
+  font-size: .875rem;
+  /*letter-spacing: 50px;*/
+  line-height: 1.5rem;}
+
+  .musical__shoppable-link:hover{
+    text-decoration: none;}
+
   @media screen and (max-width: 768px) {
     .musical__row1 {
       background-image: url(img/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}
       .musical__row1--space {
         padding: 20% 0 10%;
         width: 50%;}
+
+    .musical__colIzq, .musical__colDer {
+      display: block;
+      width:100%;
+    }
   }
   @media screen and (max-width: 480px) {
 
