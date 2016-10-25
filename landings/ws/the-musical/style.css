@@ -1,0 +1,77 @@
+.musical {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow-x: hidden;}
+
+.musical__row1 {
+  background: #f8f8f8 url(img/pataky_wearesexywomen_1_backgroundvideo_des.jpg) center 0 no-repeat;
+  background-size: contain;
+  padding-bottom: 5%;
+  /* vidéo player */}
+
+  .musical__row1--space {
+    padding: 10% 0 6%;
+    width: 60%;
+    margin: auto;}
+
+.musical__frame {
+  width: 970px;
+  max-width: 87%;
+  /*position: absolute;
+  top: 0;//330px;
+  left: 0;
+  right: 0;*/
+  margin: 0 auto;
+  border: 10px solid #fff;
+  background-color: #000; }
+
+.musical__player {
+  width: 100%;
+  display: inline-block;
+  position: relative; }
+
+.musical__player:after {
+  /* 16:9 ratio */
+  padding-top: 56.25%;
+  display: block;
+  content: ''; }
+
+.musical__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+/* Row2 */
+.musical__title{
+  font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.musical__text{
+  font-size:37px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.musical__title--interline{
+  font-size:15px;
+}
+
+.musical__subtitle{
+  font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
+  font-size:1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top:.5%;
+}
+  @media screen and (max-width: 768px) {
+    .musical__row1 {
+      background-image: url(img/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}
+      .musical__row1--space {
+        padding: 20% 0 10%;
+        width: 50%;}
+  }
+  @media screen and (max-width: 480px) {
+
+  }
