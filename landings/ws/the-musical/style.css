@@ -48,26 +48,23 @@
 /* Row2 */
 .musical__title{
   font-weight: bold;
-  text-align: center;
-}
+  text-align: center;}
 
   .musical__title--interline{
-    font-size:1rem;
-  }
+    font-size:1rem;}
 
 .musical__text{
   font-size:2.2rem;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
+  text-transform: uppercase;}
+
+.musical__text::before{content:':::::::::::::::';font-size:1rem;}
+  .musical__text::after{content:':::::::::::::::';font-size:1rem;}
 
 .musical__subtitle{
   font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
   font-size:1.3rem;
   font-weight: bold;
-  text-align: center;
-  margin-top:.5%;
-}
+  text-align: center;}
 
 /* Row3 */
 .musical__row3 {
@@ -97,6 +94,42 @@
   .musical__shoppable-link:hover{
     text-decoration: none;}
 
+/* Row 5 */
+.musical__product{
+  display: inline-block;
+  margin: 0 0 3rem 0;
+  width: 19%;}
+
+  .musical__product-image img{
+    max-width: 100%; }
+
+  .c05__thumb-link {background: none;}
+
+  .musical__product-name{
+    text-align: center; }
+
+  .musical__buttoms{
+    text-align: center;}
+
+    .musical__buttom{
+      background: #f7e7e7;
+      border: 0;
+      border-radius: .125rem;
+      color: #333;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Playfair Display,Georgia,serif;
+      font-size:16px;
+      /*height: 41px;*/
+      letter-spacing: .1px;
+      padding: .625rem 1.3125rem;
+      text-decoration: none;
+      width: auto;
+    }
+    .musical__buttom:hover{
+      color: #000;
+      background: #e9c6c8;}
+
   @media screen and (max-width: 768px) {
     .musical__row1 {
       background-image: url(img/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}
@@ -108,6 +141,9 @@
       display: block;
       width:100%;
     }
+
+    .musical__product{
+      width: 49%;}
   }
   @media screen and (max-width: 480px) {
 
