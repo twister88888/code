@@ -130,6 +130,23 @@
       color: #000;
       background: #e9c6c8;}
 
+  /* Row 7 */
+  .musical__gallery1{
+    display: inline-block;
+    width:49%;
+    vertical-align: top;}
+
+    .musical__gallery1 img{ max-width: 100%;}
+
+  .musical__gallery2{
+    display: inline-block;
+    vertical-align: top;
+    width:49%; }
+
+    .musical__gallery2 img{
+      display: inline-block;
+      width:49%;}
+
   @media screen and (max-width: 768px) {
     .musical__row1 {
       background-image: url(img/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}
@@ -139,11 +156,12 @@
 
     .musical__colIzq, .musical__colDer {
       display: block;
-      width:100%;
-    }
+      width:100%; }
 
     .musical__product{
       width: 49%;}
+    .musical__gallery1{ width: 99%; }
+    .musical__gallery2{ width:100%; }
   }
   @media screen and (max-width: 480px) {
 
