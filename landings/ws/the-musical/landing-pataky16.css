@@ -56,6 +56,7 @@
 .musical__text{
   display: table;
   font-size:2.2rem;
+  letter-spacing: 0.2rem;
   margin: auto;
   text-transform: uppercase;}
 
@@ -63,6 +64,7 @@
   content:':::::::::::::::';
   display: table-cell;
   font-size:1rem;
+  letter-spacing: 0;
   padding-right:.3rem;
   vertical-align: middle;}
 
@@ -70,8 +72,9 @@
   content:':::::::::::::::';
   font-size:1rem;
   display: table-cell;
-  vertical-align: middle;
-  padding-left:.3rem;}
+  letter-spacing: 0;
+  padding-left:.3rem;
+  vertical-align: middle;}
 
 .musical__subtitle{
   font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
@@ -128,7 +131,7 @@
       background: #f7e7e7;
       border: 0;
       border-radius: .125rem;
-      color: #333;
+      font-weight: normal !important;
       cursor: pointer;
       display: inline-block;
       font-family: Playfair Display,Georgia,serif;
@@ -136,7 +139,7 @@
       /*height: 41px;*/
       letter-spacing: .1px;
       padding: .625rem 1.3125rem;
-      text-decoration: none;
+      text-decoration: none !important;
       width: auto;
     }
     .musical__buttom:hover{
@@ -146,7 +149,7 @@
   /* Row 7 */
   .musical__gallery1{
     display: inline-block;
-    width:49%;
+    width:48.4%;
     vertical-align: top;}
 
     .musical__gallery1 img{ max-width: 100%;}
@@ -160,21 +163,58 @@
       display: inline-block;
       width:49%;}
 
-  /*@media screen and (max-width: 768px) {*/
-  @media only screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    .musical__row1 {background-image: url(img/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}
 
-    .musical__row1 {
-      background-image: url(img/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}
+    .musical__text{
+      letter-spacing: 0;}
+    .musical__text span{display: block;}
+
+    .musical__text::before{content:'';}
+
+    .musical__text::after{content:'';}
+
+    /*.musical--margin{margin:4rem 0 2rem;}*/
+
+    .musical__subtitle span::before{
+      content:':::::::::::::::';
+      padding-right:.3rem;}
+
+    .musical__subtitle span::after{
+      content:':::::::::::::::';
+      padding-left:.3rem;}
+
+    .musical__points--mobile::after{
+      content:'::::::::::::::::::::::::::::::';
+      font-size:1.2rem;}
+
       .musical__row1--space {
         padding: 20% 0 10%;
         width: 50%;}
 
+    /* Row 4 */
     .musical__colIzq, .musical__colDer {
       display: block;
       width:100%; }
 
-    .musical__product{
-      width: 49%;}
-    .musical__gallery1{ width: 99%; }
-    .musical__gallery2{ width:100%; }
+    /* Row 5 */
+    .musical__product{width: 49%;}
+
+    .musical__buttom{
+      margin-bottom: 1rem;
+      min-width: 20rem;}
+
+    /* Row 7 */
+    .musical__gallery1{
+      text-align: center;
+      width: 98.9%; }
+
+      .musical__gallery1 img {width:98%;}
+
+    .musical__gallery2{
+      padding-top: .3rem;
+      text-align: center;
+      width: 99%; }
+
+      .musical__gallery2 img{width: 48.5%;}
   }
