@@ -9,7 +9,10 @@
 
 .musical__row1 {
   background: #f8f8f8 url(img/pataky_wearesexywomen_1_backgroundvideo_des.jpg) center 0 no-repeat;
+  /*background: #f8f8f8 url((/on/demandware.static/-/Sites-WS-Library/default/dwa21d395d/images/landing/the-musical/pataky_wearesexywomen_1_backgroundvideo_des.jpg) center 0 no-repeat;*/
   background-size: contain;}
+
+.musical_row1-imgmob{display:none;}
 
   .musical__row1--space {
     padding: 9rem 0 5rem;
@@ -164,8 +167,9 @@
       width:49%;}
 
   @media screen and (max-width: 768px) {
-    .musical__row1 {background-image: url(img/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}
-
+    .musical__row1 {background-image: none;}
+    .musical_row1-imgmob{display:block;}
+    /*.musical__row1 {background-image: url(/on/demandware.static/-/Sites-WS-Library/default/dwa21d395d/images/landing/the-musical/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}*/
     .musical__text{
       letter-spacing: 0;}
     .musical__text span{display: block;}
@@ -188,10 +192,11 @@
       content:'::::::::::::::::::::::::::::::';
       font-size:1.2rem;}
 
-      .musical__row1--space {
-        padding: 20% 0 10%;
-        width: 50%;}
+      .musical__row1--space {padding: 0;}
 
+    .musical__frame{
+      border:0;
+      max-width: 100%;}
     /* Row 4 */
     .musical__colIzq, .musical__colDer {
       display: block;
@@ -202,7 +207,7 @@
 
     .musical__buttom{
       margin-bottom: 1rem;
-      min-width: 20rem;}
+      min-width: 18rem;}
 
     /* Row 7 */
     .musical__gallery1{
