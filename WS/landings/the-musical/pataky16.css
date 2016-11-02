@@ -1,11 +1,12 @@
 .musical {
+    color:#000;
     font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
     overflow-x: hidden;}
 
-  .musical--margin{margin:3rem 0;}
+  .musical--margin{margin:4rem 0 3rem;}
 
 .musical__row1 {
   /*background: #f8f8f8 url(img/pataky_wearesexywomen_1_backgroundvideo_des.jpg) center 0 no-repeat;*/
@@ -28,7 +29,7 @@
   right: 0;*/
   margin: 0 auto;
   border: 10px solid #fff;
-  background-color: #000; }
+/*background-color: #000; */}
 
 .musical__player {
   width: 100%;
@@ -58,8 +59,8 @@
 
 .musical__text{
   display: table;
-  font-size:2.2rem;
-  letter-spacing: 0.2rem;
+  font-size:2rem;
+  letter-spacing: 0.4rem;
   margin: auto;
   text-transform: uppercase;}
 
@@ -81,9 +82,10 @@
 
 .musical__subtitle{
   font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
-  font-size:1.3rem;
+  font-size:1.1rem;
   font-weight: bold;
-  text-align: center;}
+  text-align: center;
+  letter-spacing: 0.2rem;}
 
 /* Row3 */
 .musical__row3 {
@@ -93,6 +95,10 @@
   display: inline-block;
   vertical-align: top;
   width:42%;}
+
+.musical__colIzq{margin-right:.2rem;}
+
+.musical__colDer{margin-left:.2rem;}
 
 .musical__colIzq img, .musical__colDer img{
   max-width:100%;}
@@ -107,8 +113,8 @@
 .musical__shoppable-link{
   color: #000;
   font-size: .875rem;
-  /*letter-spacing: 50px;*/
-  line-height: 1.5rem;}
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;}
 
   .musical__shoppable-link:hover{
     text-decoration: none;}
@@ -141,6 +147,7 @@
       font-size:16px;
       /*height: 41px;*/
       letter-spacing: .1px;
+      margin: 0 .5rem;
       padding: .625rem 1.3125rem;
       text-decoration: none !important;
       width: auto;
@@ -155,7 +162,9 @@
     width:48.4%;
     vertical-align: top;}
 
-    .musical__gallery1 img{ max-width: 100%;}
+    .musical__gallery1 img{
+      max-width: 100%;
+      padding: 0.1rem;}
 
   .musical__gallery2{
     display: inline-block;
@@ -164,6 +173,7 @@
 
     .musical__gallery2 img{
       display: inline-block;
+      padding: 0.1rem;
       width:49%;}
 
   @media screen and (max-width: 768px) {
@@ -180,7 +190,10 @@
     .musical__text::after{content:'';}
 
     /*.musical--margin{margin:4rem 0 2rem;}*/
-    .musical__subtitle {font-size:1.1rem;}
+    .musical__subtitle {
+      font-size:1.1rem;
+      letter-spacing: 0;}
+      
     .musical__subtitle span::before{
       content:':::::::::::::::';
       padding-right:.3rem;}
