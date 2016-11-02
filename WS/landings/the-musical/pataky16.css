@@ -94,6 +94,7 @@
 
 /* Row3 */
 .musical__row3 {
+  margin-bottom: 4rem;
   text-align: center;}
 
 .musical__colIzq, .musical__colDer {
@@ -125,6 +126,7 @@
     text-decoration: none;}
 
 /* Row 5 */
+.musical__row5{margin-bottom: 4rem;}
 .musical__product{
   display: inline-block;
   margin: 0 0 3rem 0;
