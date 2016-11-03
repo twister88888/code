@@ -1,36 +1,48 @@
 <style type="text/css">
-    .c88{
-        background: #C84671;
-        color: #fff;
-        text-align: center;
-        padding: 2rem .7rem 1rem;
-    }
-    
-    .c88__title, .c88 h2{
+.c88{
+	background: rgba(237,182,215,1);
+background: -moz-linear-gradient(left, rgba(237,182,215,1) 0%, rgba(199,220,242,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,182,215,1)), color-stop(100%, rgba(199,220,242,1)));
+background: -webkit-linear-gradient(left, rgba(237,182,215,1) 0%, rgba(199,220,242,1) 100%);
+background: -o-linear-gradient(left, rgba(237,182,215,1) 0%, rgba(199,220,242,1) 100%);
+background: -ms-linear-gradient(left, rgba(237,182,215,1) 0%, rgba(199,220,242,1) 100%);
+background: linear-gradient(to right, rgba(237,182,215,1) 0%, rgba(199,220,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edb6d7', endColorstr='#c7dcf2', GradientType=1 );
+	color:#fff;
+	text-align:center;
+	padding:0.5rem 0;
+}
+.c88__title{
         font-family: Lato,Trebouchet,Helvetica,Arial,sans-serif;
-    }
-    
-    .c88__title{
-        padding: 0!important;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 2.5rem;
-        letter-spacing: .03em;
-         line-height: normal;
-    }
-    
-    .c88__legal{
-        color: #fff;
+	font-size: 2.5rem;
+        letter-spacing: .2rem;
+        line-height:3rem;
+}
+.c88__legal{
+	color: #fff;
         font-size: .75rem;
+        padding-top: 1rem;
         text-align: center;
-    }
+}
+.c88__button{
+        color:#fff;
+        display:block;
+        font-weight:bold;
+        margin-top:1.2rem;
+        text-decoration:underline;
+}
+.c88__button:hover{
+         color:#b5b5b5;
+        text-decoration:none;
+}
 </style>
-
 <div class="c88">
-    <span class="c88__title grid-banner__title">Free shipping* until Sunday</span>
-    <h2>Code: WEEKENDWS</h2>
+    <span class="c88__title grid-banner__title">
+        30% OFF ALL SLEEPWEAR & HOMEWEAR
+    </span>
+    <a class="c88__button" href="$url('Search-Show','cgid','promotions_new_30')$" title="Shop now">SHOP NOW</a>
     <div class="c88__legal c90__smalltxt">
-		<span class="grid-banner__smalltxt">*For orders over 30€. Valid from 21/10/16 until 23/10/16. </span>
-		<a href="http://staging.womensecret.com/es/es/promotions.html" class="grid-banner__smalllnk">See more.</a>
+		<span class="grid-banner__smalltxt">Valid from 05/11/16 until 23/11/16.</span>
+		<a href="$url('Page-Show', 'cid', 'promotions')$" class="grid-banner__smalllnk">  More info here.</a>
 	</div>
 </div>
