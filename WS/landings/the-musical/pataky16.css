@@ -189,7 +189,7 @@
     .musical_row1-imgmob img{width:100%;}
     /*.musical__row1 {background-image: url(/on/demandware.static/-/Sites-WS-Library/default/dwa21d395d/images/landing/the-musical/pataky_wearesexywomen_1_backgroundvideo_mob.jpg);}*/
     .musical__text{
-      letter-spacing: 0;}
+      letter-spacing: 0.3rem;}
     .musical__text span{display: block;}
 
     .musical__text::before{content:'';}
@@ -229,7 +229,7 @@
 
     .musical__buttom{
       margin-bottom: 1rem;
-      min-width: 18rem;}
+      min-width: 17rem;}
 
     /* Row 7 */
     .musical__gallery1{
@@ -239,7 +239,6 @@
       .musical__gallery1 img {width:98%;}
 
     .musical__gallery2{
-      padding-top: .3rem;
       text-align: center;
       width: 99%; }
 
