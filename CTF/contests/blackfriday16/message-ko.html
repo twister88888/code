@@ -1,0 +1,42 @@
+<style>.contest {
+        font-size: 1rem;
+        background-color: #000;
+    }
+
+  /* Column left */
+  .contest__image {
+    color:#000;
+    text-aling:center;
+  }
+
+  .contest__image img{max-width:100%;}
+  .contest__image div{margin-left:10%;}
+
+  /* Column right */
+  .contest__text {
+    margin-top: 17%;
+    padding-left: 2%;
+  }
+  @media only screen and (max-width: 640px)  {
+    .contest__image div {margin-left:0;}
+    .contest__text {
+      margin-top: 0;
+      padding-left: 0;
+    }
+  }
+</style>
+<div class="contest" style="background-image: url('null');">
+  <div class="grid">
+    <div class="contest__text grid__unit m-2-3 l-1-2">
+      <p>La inscripción ha fallado.  <br />Por favor inténtalo de nuevo.</p>
+      <a href="contest?cid=contestpage-settings" style="color:#null" class="button button-large button-primary button-large-block" type="submit" value="Aplicar" name="dwfrm_contest_confirm">
+        Intentar de nuevo
+      </a>
+    </div>
+    <div class="contest__image grid__unit m-1-3 l-1-2">
+            <div>
+                  <img src="/on/demandware.static/-/Sites-CTF-Library/default/dwa21d395d/images/landings/blackfriday/black-friday-16.gif">
+            </div>
+    </div>
+  </div>
+</div>
